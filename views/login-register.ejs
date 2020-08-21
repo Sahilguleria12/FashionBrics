@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Or Register</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<style>
+  @keyframes spin {
+ from{
+ transform: rotateY(0deg);
+ moz-transform: rotateY(0deg);
+ ms-transform: rotateY(0deg);
+ }
+ to{
+ transform: rotateY(360deg);
+ moz-transform: rotateY(360deg);
+ ms-transform: rotateY(360deg);
+ }
+}
+@-webkit-keyframes spin{
+ from{-webkit-transform: rotateY(0deg);}
+ to{-webkit-transform: rotateY(360deg);}
+}
+  .imageSpin{
+ animation-name: spin;
+ animation-timing-function: linear;
+ animation-iteration-count: infinite;
+ animation-duration: 20s;
+ -webkit-animation-name: spin;
+ -webkit-animation-timing-function: linear;
+ -webkit-animation-iteration-count: infinite;
+ -webkit-animation-duration: 5s;
+}
+  img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+  body{
+    background-image: url("nature-red-forest-leaves-33109.jpg");
+  }
+      
+#loading1 {
+		animation: rotation 3s infinite linear;
+}
+
+@keyframes rotation {
+		from {
+				transform: rotate(0deg);
+		}
+		to {
+				transform: rotate(359deg);
+		}
+}
+
+</style>
+<body>
+  
+    <div class="container p-20" style="background-color: red;>
+       
+            <div class="col-sm-6 bg-light rounded border py-3 offset-sm-1">
+                
+                <img id="loading1" src="/c.jpg" style="background-color: darkslategrey; border-radius: 50%;" alt="Logo" >
+                <br>
+                <h1 class="imageSpin" class="text-center">Register</h1>
+                <br>
+                <form action="/register" method="POST" novalidate>
+                        <div class="form-group">
+                          <label for="_rname"><h3>Name</h3></label>
+                          <input type="text" name="user_name" id="_rname" class="form-control" placeholder="Name" value="<%= (locals.old_data) ? old_data.user_name : ''; %>" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="_remail"><h3>Email</h3></label>
+                          <input type="email" name="user_email" id="_remail" class="form-control" placeholder="Email" value="<%= (locals.old_data) ? old_data.user_email : ''; %>" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="_rpass"><h3>Password</h3></label>
+                          <input type="password" name="user_pass" id="_rpass" class="form-control" placeholder="Password" required>
+                        </div>
+                        <% if (locals.register_error) { 
+                          register_error.forEach(function(error_msg){ %>
+                          <div class="alert alert-danger" role="alert"><%= error_msg %></div>
+                        <% });
+                        } %>
+                        <br>
+                        <button type="submit" class="btn btn-outline-warning btn-lg .text-center">Sign Up</button>
+                    </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

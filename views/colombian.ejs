@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    #loading {
+        animation: rotation 2s infinite linear;
+    }
+    
+    @keyframes rotation {
+        from {
+            -webkit-transform: rotate(0deg);
+        }
+        to {
+            -webkit-transform: rotate(359deg);
+        }
+    }
+
+     .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+    }
+    
+    .fa:hover {
+      color:yellow;
+        opacity: 0.7;
+    }
+    
+    .fa-facebook {
+    
+      color: white;
+    }
+    
+    .fa-twitter {
+      
+      color: white;
+    }
+    
+    .fa-google {
+    
+      color: white;
+    }
+.fotter {
+       
+       height: 30%;
+       width: 100%;
+       background-color: #8B0000;
+      
+       color: white;
+       text-align: center;
+    }
+    
+    
+@keyframes spin {
+ from{
+ transform: rotateY(0deg);
+ moz-transform: rotateY(0deg);
+ ms-transform: rotateY(0deg);
+ }
+ to{
+ transform: rotateY(360deg);
+ moz-transform: rotateY(360deg);
+ ms-transform: rotateY(360deg);
+ }
+}
+@-webkit-keyframes spin{
+ from{-webkit-transform: rotateY(0deg);}
+ to{-webkit-transform: rotateY(360deg);}
+}
+.imageSpin{
+ animation-name: spin;
+ animation-timing-function: linear;
+ animation-iteration-count: infinite;
+ animation-duration: 5s;
+ -webkit-animation-name: spin;
+ -webkit-animation-timing-function: linear;
+ -webkit-animation-iteration-count: infinite;
+ -webkit-animation-duration: 5s;
+}
+
+   .container { 
+            width:1650px; 
+            height:550px; 
+            background-color:red; 
+            padding-top:20px; 
+            padding-left:15px; 
+            padding-right:15px; 
+        } 
+        #st-box { 
+            float:left; 
+            width:500px; 
+            height:500px; 
+            background-color:white; 
+            border:solid black; 
+        } 
+        #nd-box { 
+            float:left; 
+            width:1100px; 
+            height:500px; 
+            background-color:red;  
+           
+            margin-left:20px; 
+        } 
+       
+        h1 { 
+            color:orange; 
+            text-align: center;
+        
+        } 
+    .b1 {
+  float: right;
+  font-size:20px;
+  margin: 10px;
+  border-radius: 50%;
+
+  width: 100px;
+  height: 50px;
+}
+
+.b1 {
+    width: 220px;
+    height: 50px;
+    
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.b1:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.b1:active {
+    color: #000;
+}
+
+.b1:active:after {
+    background: transparent;
+}
+
+.b1:hover:before {
+    opacity: 1;
+}
+
+.b1:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+    .line-1{
+    
+        
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+
+
+
+.anim-typewriter{
+  animation: typewriter 15s steps(200) 1s 1 normal both,
+             blinkTextCursor 500ms steps(200) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 28em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+    html,body {
+      height: 100%;
+    }
+    
+    
+      .wrapper {
+      height: 100%;
+    }
+    
+    .fixed-bg {
+      height: 100%; 
+    }
+    .fixed-bg {
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+    
+    .scroll-bg {
+      background-color: #0f0f0a;
+    }
+    
+    /* first section */
+    
+    .bg-1 {
+      
+      background-image: url('/ricardo-gomez-angel-GcHar4P8V_Q-unsplash.jpg');
+      
+    }
+    
+    .navbar {
+  background-color: #8B0000;
+  padding: 20px;
+  overflow: hidden;
+  
+  
+}
+
+.navbar a {
+  float: right;
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+    .h1 {
+  width:150px;
+   color:white;
+  text-shadow: 2px 2px 5px white;
+  
+  font-size: 500%;
+  font-style: italic;
+}
+  
+
+.p1{
+background-image: url("abstract-background-carpentry-construction-268976.jpg");
+}
+#loading1 {
+    border-radius: 50%;
+		animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+		from {
+				transform: rotate(0deg);
+		}
+		to {
+				transform: rotate(359deg);
+		}
+}
+</style>
+<body>
+    
+    <div class="navbar">
+        
+            
+    <img id="loading1" src="/c.jpg" style="background-color: darkslategrey;" alt="Logo" > 
+    <a class="b1" href="/sr4" role="button">Home</a>
+     
+      
+    
+    </div>
+    <div align="center" style="background-color: gray; ">
+        <img src="/c1.png" style="border-radius: 50%;" alt="Logo">&nbsp;&nbsp;
+        <img id="loading" src="/loading_small.png" style="border-radius: 50%;" alt="Logo">&nbsp;&nbsp;
+        <img style="border-radius: 50%;" src="/l1.png">&nbsp;&nbsp;
+        <img id="loading" src="/loading_small.png" style="border-radius: 50%;" alt="Logo">&nbsp;&nbsp;
+        <img src="/m.png" style="border-radius: 50%;" alt="Logo">&nbsp;&nbsp;
+        <img src="/b1.png" style="border-radius: 50%;" alt="Logo">&nbsp;&nbsp;
+        <img src="/i2.png" style="border-radius: 50%;" alt="Logo">&nbsp;&nbsp;
+        <img class="imageSpin" src="/A11.jpg" style="border-radius: 50%;" alt="Logo">&nbsp;&nbsp;
+      </div>
+    
+    <div class="fixed-bg bg-1">
+        
+        <p class="line-1 anim-typewriter" align="center" style="font-size: 60px"><mark>Welcome to the New Era of Colombia Fashion Styles.....</mark></p>
+    
+      </div>
+
+ 
+        <h1 style="color: black;">Royal Jodpur Style</h1> 
+          
+        <div class="container"> 
+            <div id="st-box"> 
+                <img class="imageSpin" src="Johanna Ortiz Spring 2019 Ready-to-Wear Fashion Show.jpg" style="width:500px; height:500px;"> 
+            </div> 
+              
+            <div id="nd-box"> 
+                
+        
+                    <p class="line-2 anim-typewriter" align="center" style="font-size: 40px"><mark>Clothing (also known as clothes, apparel and attire) is items worn on the body. Clothing is typically made of fabrics or textiles but over time has included garments made from animal skin or other thin sheets of materials put together. The wearing of clothing is mostly restricted to human beings and is a feature of all human societies. The amount and type of clothing worn depends on gender, body type, social, and geographic considerations.</mark></p>
+            </div> 
+        </div> 
+
+        <h1 style="color: black;">Royal Himachal Style</h1> 
+          
+        <div class="container"> 
+           
+              
+            <div id="nd-box"> 
+                
+        
+                    <p class="line-2 anim-typewriter" align="center" style="font-size: 40px"><mark>Dress up for business meetings, particularly in Medellin, Bogata and Cali. A suit, preferably dark blue or dark gray, conservative tie and polished shoes are appropriate for men. Women should wear a dress with a jacket or a suit with a knee-length skirt, makeup and stylish heels. A guayabera, or traditional embroidered shirt, and pressed slacks for men and a less-formal dress for women are appropriate in rural areas.</mark></p>
+            </div> 
+            <div id="st-box"> 
+                <img class="imageSpin" src="COLORS OF CARTAGENA COLOMBIA __ _ Atlantic-Pacific.jpg" style="width:500px; height:500px;"> 
+            </div> 
+        </div> 
+
+        <h1 style="color: black;">Royal Rajasthan Style</h1> 
+          
+        <div class="container"> 
+            <div id="st-box"> 
+                <img class="imageSpin" src="Johanna Ortiz Fall 2017 Ready-to-Wear Fashion Show.jpg" style="width:500px; height:500px;"> 
+            </div>
+              
+            <div id="nd-box"> 
+                
+        
+                    <p class="line-2 anim-typewriter" align="center" style="font-size: 40px"><mark>Colombian fashion follows all the current European and North American trends, but style really varies by city primarily due to weather conditions. For example, Medellin is hot during the day and cool at night; however, it’s not your tropical destination… so, you’ll want to dress light, but not like you’re going to the beach. Medellin is considered the fashion capital of Colombia, people dress according to the trends – when I was there in 2015 Coachella-Style was the hot fashion.</mark></p>
+            </div> 
+            
+        </div> 
+
+        <h1 style="color: black;">Royal Gujarat Style</h1> 
+          
+        <div class="container"> 
+           
+              
+            <div id="nd-box"> 
+                
+        
+                    <p class="line-2 anim-typewriter" align="center" style="font-size: 40px"><mark>A pair of jeans paired with a nice shirt and flats is the uniform around here, and the high heels come out at night.Bogotá is a colder city: think New York in spring – it’s more formal and sophisticated than the other cities, and when in doubt, wear black. A pair of leggings with knee high boots, scarves, leather jackets, sweaters all in dark colors — that’s Bogotá style. Cartagena is a tropical city with extraordinarily hot and humid weather; dress accordingly with loose t-shirts, short flouncy dresses, maxi skirts and sandals. </mark></p>
+            </div> 
+            <div id="st-box"> 
+                <img class="imageSpin" src="Johanna Ortiz - Pasarela.jpg" style="width:500px; height:500px;"> 
+            </div>
+            
+        </div> 
+
+     
+
+        <hr>
+
+        <div class="fotter">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            </div>
+            
+</body>
+</html>

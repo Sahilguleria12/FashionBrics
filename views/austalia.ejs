@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+     .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+    }
+    
+    .fa:hover {
+      color:yellow;
+        opacity: 0.7;
+    }
+    
+    .fa-facebook {
+    
+      color: white;
+    }
+    
+    .fa-twitter {
+      
+      color: white;
+    }
+    
+    .fa-google {
+    
+      color: white;
+    }
+.fotter {
+       
+       height: 30%;
+       width: 100%;
+       background-color: #8B0000;
+      
+       color: white;
+       text-align: center;
+    }
+    
+    
+@keyframes spin {
+ from{
+ transform: rotateY(0deg);
+ moz-transform: rotateY(0deg);
+ ms-transform: rotateY(0deg);
+ }
+ to{
+ transform: rotateY(360deg);
+ moz-transform: rotateY(360deg);
+ ms-transform: rotateY(360deg);
+ }
+}
+@-webkit-keyframes spin{
+ from{-webkit-transform: rotateY(0deg);}
+ to{-webkit-transform: rotateY(360deg);}
+}
+.imageSpin{
+ animation-name: spin;
+ animation-timing-function: linear;
+ animation-iteration-count: infinite;
+ animation-duration: 5s;
+ -webkit-animation-name: spin;
+ -webkit-animation-timing-function: linear;
+ -webkit-animation-iteration-count: infinite;
+ -webkit-animation-duration: 5s;
+}
+
+   .container { 
+            width:1650px; 
+            height:550px; 
+            background-color:red; 
+            padding-top:20px; 
+            padding-left:15px; 
+            padding-right:15px; 
+        } 
+        #st-box { 
+            float:left; 
+            width:500px; 
+            height:500px; 
+            background-color:white; 
+            border:solid black; 
+        } 
+        #nd-box { 
+            float:left; 
+            width:1100px; 
+            height:500px; 
+            background-color:red;  
+           
+            margin-left:20px; 
+        } 
+       
+        h1 { 
+            color:orange; 
+            text-align: center;
+        
+        } 
+    .b1 {
+  float: right;
+  font-size:20px;
+  margin: 10px;
+  border-radius: 50%;
+
+  width: 100px;
+  height: 50px;
+}
+
+.b1 {
+    width: 220px;
+    height: 50px;
+    
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.b1:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.b1:active {
+    color: #000;
+}
+
+.b1:active:after {
+    background: transparent;
+}
+
+.b1:hover:before {
+    opacity: 1;
+}
+
+.b1:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+    .line-1{
+    
+        
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+
+
+
+.anim-typewriter{
+  animation: typewriter 15s steps(200) 1s 1 normal both,
+             blinkTextCursor 500ms steps(200) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 28em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+    html,body {
+      height: 100%;
+    }
+    
+    
+      .wrapper {
+      height: 100%;
+    }
+    
+    .fixed-bg {
+      height: 100%; 
+    }
+    .fixed-bg {
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+    
+    .scroll-bg {
+      background-color: #0f0f0a;
+    }
+    
+    /* first section */
+    
+    .bg-1 {
+      
+      background-image: url('/holger-link-jK9dT34TfuI-unsplash.jpg');
+      
+    }
+    
+    .navbar {
+  background-color: #8B0000;
+  padding: 20px;
+  overflow: hidden;
+  
+  
+}
+
+.navbar a {
+  float: right;
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+    .h1 {
+  width:150px;
+   color:white;
+  text-shadow: 2px 2px 5px white;
+  
+  font-size: 500%;
+  font-style: italic;
+}
+  
+
+.p1{
+background-image: url("abstract-background-carpentry-construction-268976.jpg");
+}
+#loading1 {
+    border-radius: 50%;
+		animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+		from {
+				transform: rotate(0deg);
+		}
+		to {
+				transform: rotate(359deg);
+		}
+}
+</style>
+<body>
+    
+    <div class="navbar">
+        
+            
+    <img id="loading1" src="/c.jpg" style="background-color: darkslategrey;" alt="Logo" > 
+    <a class="b1" href="/sr4" role="button">Home</a>
+     
+      
+    
+    </div>
+    <div align="center" style="background-color: gray; ">
+        <img class="imageSpin" src="/A11.jpg" style="border-radius: 50%;height: 300px;" alt="Logo">&nbsp;&nbsp;
+        <img src="/u1.png" style="border-radius: 50%;" alt="Logo">&nbsp;&nbsp;
+        <img style="border-radius: 50%;" src="/s1.jpg">&nbsp;&nbsp;
+        <img class="imageSpin" src="/t11.jpg" style="border-radius: 50%;" alt="Logo">&nbsp;&nbsp;
+        <img src="/r.png" style="border-radius: 50%;" alt="Logo">&nbsp;&nbsp;
+        <img src="/a1.png" style="border-radius: 50%;" alt="Logo">&nbsp;&nbsp;
+        <img src="/l1.png" style="border-radius: 50%;" alt="Logo">&nbsp;&nbsp;
+        <img src="/i2.png" style="border-radius: 50%;" alt="Logo">&nbsp;&nbsp;
+        <img src="/a1.png" style="border-radius: 50%;" alt="Logo">&nbsp;&nbsp;
+      </div>
+    
+    <div class="fixed-bg bg-1">
+        
+        <p class="line-1 anim-typewriter" align="center" style="font-size: 60px"><mark>Welcome to the New Era of Australian Fashion Styles.....</mark></p>
+    
+      </div>
+
+ 
+        <h1 style="color: black;">Australian Fashion Style</h1> 
+          
+        <div class="container"> 
+            <div id="st-box"> 
+                <img class="imageSpin" src="aus.jpg" style="width:500px; height:500px;"> 
+            </div> 
+              
+            <div id="nd-box"> 
+                
+        
+                    <p class="line-2 anim-typewriter" align="center" style="font-size: 40px"><mark>The culture of Australia is primarily a Western culture, to some extent derived from Britain but also influenced by the unique geography of Australia, the cultural input of Aboriginal, Torres Strait Islander and other Australian people. The British colonization of Australia began in 1788, and waves of multi-ethnic migration followed. Evidence of a significant Anglo-Celtic heritage includes the predominance of the English language, the existence of a democratic system of government drawing upon the British traditions of Westminster Government.</mark></p>
+            </div> 
+        </div> 
+
+        <h1 style="color: black;"></h1> 
+          
+        <div class="container"> 
+           
+              
+            <div id="nd-box"> 
+                
+        
+                    <p class="line-2 anim-typewriter" align="center" style="font-size: 40px"><mark>Over 100 different styles, various colours and brim widths are produced in the Akubra hat range. The hats are popularly thought of as being worn by older people in rural Australia however in the 1920s Akubra was known more for making "fashion hats" such as Fedoras. The company sells hats in rural and urban areas. In 2014 it was reported that about 140,000 to 180,000 Akubras are sold every year, including "bucket loads" in Melbourne around Melbourne Cup time.</mark></p>
+            </div> 
+            <div id="st-box"> 
+                <img class="imageSpin" src="Faithfull The Brand Introduces The Punch of French Inspired Fashion.jpg" style="width:500px; height:500px;"> 
+            </div> 
+        </div> 
+
+        <h1 style="color: black;">Royal Rajasthan Style</h1> 
+          
+        <div class="container"> 
+            <div id="st-box"> 
+                <img class="imageSpin" src="Swoon Over For Love & Lemons' Spring '17 Collection.jpg" style="width:500px; height:500px;"> 
+            </div>
+              
+            <div id="nd-box"> 
+                
+        
+                    <p class="line-2 anim-typewriter" align="center" style="font-size: 40px"><mark>Driza-Bone coats made an appearance at the 2007 APEC Summit in Sydney. The 21 leaders at the Asia-Pacific Economic Cooperation conference posed in a group photo wearing Driza-Bone attire. According to an official statement, Australian Prime Minister John Howard selected Driza-Bone as the national outfit "with counsel and good advice" from his wife, Janette, and the APEC taskforce.</mark></p>
+            </div> 
+            
+        </div> 
+
+        <h1 style="color: black;"></h1> 
+          
+        <div class="container"> 
+           
+              
+            <div id="nd-box"> 
+                
+        
+                    <p class="line-2 anim-typewriter" align="center" style="font-size: 40px"><mark>Fashion of the 1960s featured a number of diverse trends. It was a decade that broke many fashion traditions, mirroring social movements during the time. Around the middle of the decade, fashions arising from small pockets of young people in a few urban centres received large amounts of media publicity, and began to heavily influence both the haute couture of elite designers and the mass-market manufacturers. Examples include the mini skirt, culottes, go-go boots, and more experimental fashions, less often seen on the street, such as curved bad-shaped PVC dresses  </mark></p>
+            </div> 
+            <div id="st-box"> 
+                <img class="imageSpin" src="rBVaR1un58WAS0YfAAfBWlk6IwE651.jpg" style="width:500px; height:500px;"> 
+            </div>
+            
+        </div> 
+
+        <h1 style="color: black;"></h1> 
+          
+        <div class="container"> 
+           
+            <div id="st-box"> 
+                <img class="imageSpin" src="aus2.jpg" style="width:500px; height:500px;"> 
+            </div>
+            <div id="nd-box"> 
+                
+        
+                    <p class="line-2 anim-typewriter" align="center" style="font-size: 40px"><mark>Humility and authenticity are strong values in Australian culture. As such, Australians are very down to earth and always mindful of not giving the impression that they think they are better than anyone else.</mark></p>
+            </div> 
+           
+            
+        </div> 
+
+        <hr>
+
+        <div class="fotter">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            </div>
+            
+</body>
+</html>

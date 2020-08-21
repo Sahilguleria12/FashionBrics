@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+     .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+    }
+    
+    .fa:hover {
+      color:yellow;
+        opacity: 0.7;
+    }
+    
+    .fa-facebook {
+    
+      color: white;
+    }
+    
+    .fa-twitter {
+      
+      color: white;
+    }
+    
+    .fa-google {
+    
+      color: white;
+    }
+.fotter {
+       
+       height: 30%;
+       width: 100%;
+       background-color: #8B0000;
+      
+       color: white;
+       text-align: center;
+    }
+    
+    
+@keyframes spin {
+ from{
+ transform: rotateY(0deg);
+ moz-transform: rotateY(0deg);
+ ms-transform: rotateY(0deg);
+ }
+ to{
+ transform: rotateY(360deg);
+ moz-transform: rotateY(360deg);
+ ms-transform: rotateY(360deg);
+ }
+}
+@-webkit-keyframes spin{
+ from{-webkit-transform: rotateY(0deg);}
+ to{-webkit-transform: rotateY(360deg);}
+}
+.imageSpin{
+ animation-name: spin;
+ animation-timing-function: linear;
+ animation-iteration-count: infinite;
+ animation-duration: 5s;
+ -webkit-animation-name: spin;
+ -webkit-animation-timing-function: linear;
+ -webkit-animation-iteration-count: infinite;
+ -webkit-animation-duration: 5s;
+}
+
+   .container { 
+            width:1650px; 
+            height:550px; 
+            background-color:red; 
+            padding-top:20px; 
+            padding-left:15px; 
+            padding-right:15px; 
+        } 
+        #st-box { 
+            float:left; 
+            width:500px; 
+            height:500px; 
+            background-color:white; 
+            border:solid black; 
+        } 
+        #nd-box { 
+            float:left; 
+            width:1100px; 
+            height:500px; 
+            background-color:red;  
+           
+            margin-left:20px; 
+        } 
+       
+        h1 { 
+            color:orange; 
+            text-align: center;
+        
+        } 
+    .b1 {
+  float: right;
+  font-size:20px;
+  margin: 10px;
+  border-radius: 50%;
+
+  width: 100px;
+  height: 50px;
+}
+
+.b1 {
+    width: 220px;
+    height: 50px;
+    
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.b1:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.b1:active {
+    color: #000;
+}
+
+.b1:active:after {
+    background: transparent;
+}
+
+.b1:hover:before {
+    opacity: 1;
+}
+
+.b1:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+    .line-1{
+    
+        
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+
+
+
+.anim-typewriter{
+  animation: typewriter 15s steps(200) 1s 1 normal both,
+             blinkTextCursor 500ms steps(200) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 28em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+    html,body {
+      height: 100%;
+    }
+    
+    
+      .wrapper {
+      height: 100%;
+    }
+    
+    .fixed-bg {
+      height: 100%; 
+    }
+    .fixed-bg {
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+    
+    .scroll-bg {
+      background-color: #0f0f0a;
+    }
+    
+    /* first section */
+    
+    .bg-1 {
+      
+      background-image: url('/sander-crombach-CqO5-lq-xR0-unsplash.jpg');
+      
+    }
+    
+    .navbar {
+  background-color: #8B0000;
+  padding: 20px;
+  overflow: hidden;
+  
+  
+}
+
+.navbar a {
+  float: right;
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+    .h1 {
+  width:150px;
+   color:white;
+  text-shadow: 2px 2px 5px white;
+  
+  font-size: 500%;
+  font-style: italic;
+}
+  
+
+.p1{
+background-image: url("abstract-background-carpentry-construction-268976.jpg");
+}
+#loading1 {
+    border-radius: 50%;
+		animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+		from {
+				transform: rotate(0deg);
+		}
+		to {
+				transform: rotate(359deg);
+		}
+}
+</style>
+<body>
+    
+    <div class="navbar">
+        
+            
+    <img id="loading1" src="/c.jpg" style="background-color: darkslategrey;" alt="Logo" > 
+    <a class="b1" href="/sr4" role="button">Home</a>
+     
+      
+    
+    </div>
+    <div align="center" style="background-color: gray; ">
+        <img src="/i1.png" style="border-radius: 50%;" alt="Logo">&nbsp;&nbsp;
+        <img src="/s1.jpg" style="border-radius: 50%;" alt="Logo">&nbsp;&nbsp;
+        <img style="border-radius: 50%;" src="/r.png">&nbsp;&nbsp;
+        <img class="imageSpin" src="/A11.jpg" style="border-radius: 50%;" alt="Logo">&nbsp;&nbsp;
+        <img src="/e.png" style="border-radius: 50%;" alt="Logo">&nbsp;&nbsp;
+        <img src="/l1.png" style="border-radius: 50%;" alt="Logo">&nbsp;&nbsp;
+      </div>
+    
+    <div class="fixed-bg bg-1">
+        
+        <p class="line-1 anim-typewriter" align="center" style="font-size: 60px"><mark>Welcome to the New Era of Israel Fashion Styles.....</mark></p>
+    
+      </div>
+
+ 
+        <h1 style="color: black;">Jerusalem Fashion Style</h1> 
+          
+        <div class="container"> 
+            <div id="st-box"> 
+                <img class="imageSpin" src="18b4dc95dcf8ccb3e4530fda7934173b--fashion-tips-fashion-design.jpg" style="width:500px; height:500px;"> 
+            </div> 
+              
+            <div id="nd-box"> 
+                
+        
+                    <p class="line-2 anim-typewriter" align="center" style="font-size: 40px"><mark>With over 200 museums, Israel has the highest number of museums per capita in the world, with millions of visitors annually. Major art museums operate in Tel Aviv, Jerusalem, Haifa and Herzliya, as well as in many towns and Kibbutzim. The Israel Philharmonic Orchestra plays at venues throughout the country and abroad, and almost every city has its own orchestra, many of the musicians hailing from the former Soviet Union.</mark></p>
+            </div> 
+        </div> 
+
+        <h1 style="color: black;">Haifa Fashion Style</h1> 
+          
+        <div class="container"> 
+           
+              
+            <div id="nd-box"> 
+                
+        
+                    <p class="line-2 anim-typewriter" align="center" style="font-size: 40px"><mark>The first works of Hebrew literature in Israel were written by immigrant authors rooted in the world and traditions of European Jewry. Yosef Haim Brenner (1881–1921) and Shmuel Yosef Agnon (1888–1970), are considered by many to be the fathers of modern Hebrew literature. Brenner, torn between hope and despair, struggled with the reality of the Zionist enterprise in the Land of Israel.</mark></p>
+            </div> 
+            <div id="st-box"> 
+                <img class="imageSpin" src="is.jpg" style="width:500px; height:500px;"> 
+            </div> 
+        </div> 
+
+        <h1 style="color: black;">Rishon LeZion Fashion Style</h1> 
+          
+        <div class="container"> 
+            <div id="st-box"> 
+                <img class="imageSpin" src="is1.jpg" style="width:500px; height:500px;"> 
+            </div>
+              
+            <div id="nd-box"> 
+                
+        
+                    <p class="line-2 anim-typewriter" align="center" style="font-size: 40px"><mark>
+                        A new fashion exhibit at the Rishon LeZion Museum presents fashion from Israel’s oldest colony and fashion inspired by the early pioneers.
+                        
+                        It’s only fitting as the history of the city of Rishon LeZion and that of the State of Israel go hand in hand. Here are a few reasons why: Rishon LeZion was the pre-State Land of Israel’s first colony, founded by the first Aliya wave of immigration in 1882. The words of the “Ha-Tikva”, Israel’s national anthem, were written by Naftaly Hertz Imber while visiting Rishon LeZion in 1883.</mark></p>
+            </div> 
+            
+        </div> 
+
+        <h1 style="color: black;">Beersheba Fashion Style</h1> 
+          
+        <div class="container"> 
+           
+              
+            <div id="nd-box"> 
+                
+        
+                    <p class="line-2 anim-typewriter" align="center" style="font-size: 40px"><mark>In the first phase of settlement, the people of the Beersheba culture lived in underground dwellings, dug in the soft loess of the Beersheba Valley. Several of these settlement were constructed in the banks of the Beersheba Creek, in areas where water could be obtained by digging wells. In the second phase, semi-subterranean houses were built on top of underground houses that had collapsed and, in the third and last phase, houses were built completely above ground on stone foundations. The walls of the houses in the later two phases were built from pisé and the roofs consisted of branches covered in clay which lay on top of two large crossed support beams.</mark></p>
+            </div> 
+            <div id="st-box"> 
+                <img class="imageSpin" src="Rishon-Shenkar-5.jpg" style="width:500px; height:500px;"> 
+            </div>
+            
+        </div> 
+
+        
+        <hr>
+
+        <div class="fotter">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            </div>
+            
+</body>
+</html>

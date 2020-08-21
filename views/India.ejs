@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+     .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+    }
+    
+    .fa:hover {
+      color:yellow;
+        opacity: 0.7;
+    }
+    
+    .fa-facebook {
+    
+      color: white;
+    }
+    
+    .fa-twitter {
+      
+      color: white;
+    }
+    
+    .fa-google {
+    
+      color: white;
+    }
+.fotter {
+       
+       height: 30%;
+       width: 100%;
+       background-color: #8B0000;
+      
+       color: white;
+       text-align: center;
+    }
+    
+    
+@keyframes spin {
+ from{
+ transform: rotateY(0deg);
+ moz-transform: rotateY(0deg);
+ ms-transform: rotateY(0deg);
+ }
+ to{
+ transform: rotateY(360deg);
+ moz-transform: rotateY(360deg);
+ ms-transform: rotateY(360deg);
+ }
+}
+@-webkit-keyframes spin{
+ from{-webkit-transform: rotateY(0deg);}
+ to{-webkit-transform: rotateY(360deg);}
+}
+.imageSpin{
+ animation-name: spin;
+ animation-timing-function: linear;
+ animation-iteration-count: infinite;
+ animation-duration: 5s;
+ -webkit-animation-name: spin;
+ -webkit-animation-timing-function: linear;
+ -webkit-animation-iteration-count: infinite;
+ -webkit-animation-duration: 5s;
+}
+
+   .container { 
+            width:1650px; 
+            height:550px; 
+            background-color:red; 
+            padding-top:20px; 
+            padding-left:15px; 
+            padding-right:15px; 
+        } 
+        #st-box { 
+            float:left; 
+            width:500px; 
+            height:500px; 
+            background-color:white; 
+            border:solid black; 
+        } 
+        #nd-box { 
+            float:left; 
+            width:1100px; 
+            height:500px; 
+            background-color:red;  
+           
+            margin-left:20px; 
+        } 
+       
+        h1 { 
+            color:orange; 
+            text-align: center;
+        
+        } 
+    .b1 {
+  float: right;
+  font-size:20px;
+  margin: 10px;
+  border-radius: 50%;
+
+  width: 100px;
+  height: 50px;
+}
+
+.b1 {
+    width: 220px;
+    height: 50px;
+    
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.b1:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.b1:active {
+    color: #000;
+}
+
+.b1:active:after {
+    background: transparent;
+}
+
+.b1:hover:before {
+    opacity: 1;
+}
+
+.b1:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+    .line-1{
+    
+        
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+
+
+
+.anim-typewriter{
+  animation: typewriter 15s steps(200) 1s 1 normal both,
+             blinkTextCursor 500ms steps(200) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 28em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+    html,body {
+      height: 100%;
+    }
+    
+    
+      .wrapper {
+      height: 100%;
+    }
+    
+    .fixed-bg {
+      height: 100%; 
+    }
+    .fixed-bg {
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+    
+    .scroll-bg {
+      background-color: #0f0f0a;
+    }
+    
+    /* first section */
+    
+    .bg-1 {
+      
+      background-image: url('/sylwia-bartyzel-eU4pipU_8HA-unsplash.jpg');
+      
+    }
+    
+    .navbar {
+  background-color: #8B0000;
+  padding: 20px;
+  overflow: hidden;
+  
+  
+}
+
+.navbar a {
+  float: right;
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+    .h1 {
+  width:150px;
+   color:white;
+  text-shadow: 2px 2px 5px white;
+  
+  font-size: 500%;
+  font-style: italic;
+}
+  
+
+.p1{
+background-image: url("abstract-background-carpentry-construction-268976.jpg");
+}
+#loading1 {
+    border-radius: 50%;
+		animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+		from {
+				transform: rotate(0deg);
+		}
+		to {
+				transform: rotate(359deg);
+		}
+}
+</style>
+<body>
+    
+    <div class="navbar">
+        
+            
+    <img id="loading1" src="/c.jpg" style="background-color: darkslategrey;" alt="Logo" > 
+    <a class="b1" href="/sr4" role="button">Home</a>
+     
+      
+    
+    </div>
+    <div align="center" style="background-color: gray; ">
+        <img src="/i1.png" style="border-radius: 50%;" alt="Logo">&nbsp;&nbsp;
+        <img src="/n.png" style="border-radius: 50%;" alt="Logo">&nbsp;&nbsp;
+        <img class="imageSpin" style="border-radius: 50%;" src="/d.jpg">&nbsp;&nbsp;
+        <img src="/i1.png" style="border-radius: 50%;" alt="Logo">&nbsp;&nbsp;
+        <img src="/a1.png" style="border-radius: 50%;" alt="Logo">&nbsp;&nbsp;
+      </div>
+    
+    <div class="fixed-bg bg-1">
+        
+        <p class="line-1 anim-typewriter" align="center" style="font-size: 60px"><mark>Welcome to the New Era of Indian Fashion Styles.....</mark></p>
+    
+      </div>
+
+ 
+        <h1 style="color: black;">Royal Jodpur Style</h1> 
+          
+        <div class="container"> 
+            <div id="st-box"> 
+                <img class="imageSpin" src="Style Your Jodhpuris Right.jpg" style="width:500px; height:500px;"> 
+            </div> 
+              
+            <div id="nd-box"> 
+                
+        
+                    <p class="line-2 anim-typewriter" align="center" style="font-size: 40px"><mark>A Jodhpuri suit or Bandhgala suit, is a formal suit from India. It originated in the Jodhpur State, and was popularized during mid 19th - mid 20th century in India. It consists of a coat and trousers, sometimes accompanied by a vest. It brings together a shorter cut with hand-embroidery escorted by the waistcoat. It is suitable for occasions such as weddings and formal gatherings.</mark></p>
+            </div> 
+        </div> 
+
+        <h1 style="color: black;">Royal Himachal Style</h1> 
+          
+        <div class="container"> 
+           
+              
+            <div id="nd-box"> 
+                
+        
+                    <p class="line-2 anim-typewriter" align="center" style="font-size: 40px"><mark>There are mainly two classes in which the community of Himachal Pradesh has been divided: Rajput and Brahmins. The attires are largely identical, but some differences can be noted. Rajput Men wear tight Churidar Pyjamas with kurta and long silk overcoat over it. Rajput women wear long kurtas stretching from their neck to their toe. This began following the purdah (veil) system which is no more prevalent in the region. They also wear Ghaghris, Salwar-Kameez and Cholis.</mark></p>
+            </div> 
+            <div id="st-box"> 
+                <img class="imageSpin" src="Gaddi Of Himachal.jpg" style="width:500px; height:500px;"> 
+            </div> 
+        </div> 
+
+        <h1 style="color: black;">Royal Rajasthan Style</h1> 
+          
+        <div class="container"> 
+            <div id="st-box"> 
+                <img class="imageSpin" src="dip.png" style="width:500px; height:500px;"> 
+            </div>
+              
+            <div id="nd-box"> 
+                
+        
+                    <p class="line-2 anim-typewriter" align="center" style="font-size: 40px"><mark>Traditional attire for Rajasthani women is ghagra, choli (also called kanchli or kurti) and odhni. The ghagra is a full-length, embroidered and pleated skirt, which comes in a variety of colours, prints and fabrics, such as silk, cotton, georgette and crêpe. Of all the various prints, the laharia, bandhej, tie ‘n dye, chundri and mothra are the most widely worn. To impart royal elegance, antique borders and Jaipuri gota-patti work are incorporated to the ghagra.</mark></p>
+            </div> 
+            
+        </div> 
+
+        <h1 style="color: black;">Royal Gujarat Style</h1> 
+          
+        <div class="container"> 
+           
+              
+            <div id="nd-box"> 
+                
+        
+                    <p class="line-2 anim-typewriter" align="center" style="font-size: 40px"><mark>The traditional Gujarati dresses for men include kediyu or kurta on the top and dhoti or chorno at the bottom. Women in Gujarat wear sarees or chaniya choli. Recently, they have started wearing salwar kameez as well. </mark></p>
+            </div> 
+            <div id="st-box"> 
+                <img class="imageSpin" src="Forever Weddings.jpg" style="width:500px; height:500px;"> 
+            </div>
+            
+        </div> 
+
+        <h1 style="color: black;">Royal Mumbai Style</h1> 
+          
+        <div class="container"> 
+           
+            <div id="st-box"> 
+                <img class="imageSpin" src="guj.jpg" style="width:500px; height:500px;"> 
+            </div>
+            <div id="nd-box"> 
+                
+        
+                    <p class="line-2 anim-typewriter" align="center" style="font-size: 40px"><mark>Women wear sarees that are 9 yards long. The saree is tucked in the middle giving it a similar look to the dhoti. The rest of the saree is wrapped around the upper body of the women. This type of saree is usually called Lugade. There were many variations in how women wear their saree. Some only wear knee length sarees. Some wear it in a skirt manner without the tuck in the middle. But the 9-yard saree is the traditional costume of women in Maharashtra. </mark></p>
+            </div> 
+           
+            
+        </div> 
+
+        <hr>
+
+        <div class="fotter">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            </div>
+            
+</body>
+</html>
