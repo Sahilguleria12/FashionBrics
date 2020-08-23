@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-var PORT = 
+var PORT = process.env.port || 3000;
 const router = express.Router();
 const cookieSession = require('cookie-session');
 const bcrypt = require('bcrypt');
