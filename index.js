@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+var PORT = 
 const router = express.Router();
 const cookieSession = require('cookie-session');
 const bcrypt = require('bcrypt');
@@ -248,6 +249,6 @@ app.get('/logout',(req,res)=>{
 //app.listen(3000, () => console.log("Server is Running..."));
 
 app.use('/', router);
-app.listen(process.env.port || 3000);
+app.listen(PORT);
 
-console.log('Running at Port 3000');
+//console.log('Running at Port 3000');
