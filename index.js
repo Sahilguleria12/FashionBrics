@@ -251,4 +251,4 @@ app.get('/logout',(req,res)=>{
 app.use('/', router);
 app.listen(PORT);
 
-//console.log('Running at Port 3000');
+console.log('Running at Port 3000');
